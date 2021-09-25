@@ -12,6 +12,14 @@
             analytics.page();
             }}();
         </script>
+        <script type=”text/javascript”>
+            (function doFunction(){
+	            analytics.page();
+	            analytics.track('Sign Up Button', {
+		        event: 'buttonclick',
+	            });	  
+	        })();
+        </script>
     </head>
     <body>
         <div class="text-center">
