@@ -12,14 +12,17 @@
             analytics.page();
             }}();
         </script>
-        <script>
-            (function doFunction(){
-	            analytics.page();
-	            analytics.track('Sign Up Button', {
-		        event: 'buttonclick',
-	            });	  
-	        });
-        </script>
+        <script type=”text/javascript”>
+  		(function doFunction(){
+			analytics.page();
+			var el = document.getElementById("clickMe");
+			if (el.addEventListener)
+				el.addEventListener("click", doFunction, false);
+			analytics.track('click', {
+				event: 'click',
+	  		});	  
+		});
+	</script>
     </head>
     <body>
         <div class="text-center">
