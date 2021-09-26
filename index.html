@@ -11,18 +11,7 @@
             analytics.load("7640gf57L1uHfxSvEXX5TcqBLW2hW1Gb");
             analytics.page();
             }}();
-        </script>
-        <script type=”text/javascript”>
-  		(function doFunction(){
-			analytics.page();
-			var el = document.getElementById("clickMe");
-			if (el.addEventListener)
-				el.addEventListener("click", doFunction, false);
-			analytics.track('click', {
-				event: 'click',
-	  		});	  
-		});
-	</script>
+        </script>        
     </head>
     <body>
         <div class="text-center">
@@ -33,5 +22,16 @@
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script type=”text/javascript”>
+  		(function doFunction(){
+			analytics.page();
+			var el = document.getElementById("clickMe");
+			if (el.addEventListener)
+				el.addEventListener("click", doFunction, false);
+			analytics.track('click', {
+				event: 'click',
+	  		});	  
+		});
+	</script>
     </body>
 </html>
