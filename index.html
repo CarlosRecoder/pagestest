@@ -22,11 +22,8 @@
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        <script>
-		function trackClick(){		
-			analytics.track('click');	  
-		};	
-    		document.getElementById("clickMe").addEventListener("click",trackClick);
+        <script>			
+    		document.getElementById("clickMe").addEventListener("click",analytics.track('click'));
 	</script>
     </body>
 </html>
